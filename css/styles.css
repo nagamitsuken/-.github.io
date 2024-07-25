@@ -1,0 +1,128 @@
+/* 全体のリセットとボックスモデル設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基本のスタイル設定 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* ナビゲーションのスタイル */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ナビゲーションリンクのアクティブスタイル */
+nav ul li a.active {
+    font-weight: bold;
+    color: #007bff; /* アクティブなリンクの色を指定 */
+}
+
+/* メインコンテンツのスタイル */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-image, .section-image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+/* 関連項目セクションのスタイル */
+#related-topics h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#related-topics p {
+    margin-bottom: 10px;
+}
+
+#related-topics a {
+    display: inline-block;
+    padding: 10px px;
+    background-color: #0e74e1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#related-topics a:hover {
+    background-color: #0056b3;
+}
+
+/* FAQセクションのスタイル */
+dl dt {
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer; /* クリック可能であることを示すカーソル */
+    position: relative;
+}
+
+/* FAQのボタンスタイル */
+dl dt button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+dl dt button:hover {
+    background-color: #0056b3;
+}
+
+/* 詳細情報の表示と非表示 */
+dl dd {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: none; /* FAQの回答はデフォルトで非表示に */
+}
